@@ -1,5 +1,3 @@
-# ToDo:
-# - pl summary, description
 %include	/usr/lib/rpm/macros.php
 %define         _class          PHP
 %define         _subclass       Parser
@@ -7,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - A PHP Grammar Parser
-#Summary(pl):	%{_pearname} - Parser
+Summary(pl):	%{_pearname} - Parser sk³adni PHP
 Name:		php-pear-%{_pearname}
 Version:	0.1
 Release:	1
@@ -51,10 +49,29 @@ hooks into parsing to catch information.
 
 This class has in PEAR status: %{_status}.
 
-#%description -l pl
-#...
-#
-#Ta klasa ma w PEAR status: %{_status}.
+%description -l pl
+PHP_Parser jest analizatorem kodu ¼ród³owego bazowanym na prawdzimy
+parserze wygenerowanym przez phpJay. Parser u¿ywa tego samego ¼ród³a
+EBNF, którego PHP u¿ywa do sparsowania samego siemie, ma zatem takie
+same mo¿liwo¶ci. Ta wersja w pe³ni wspiera parsowania ka¿dego elementu
+PHP 5 beta 1:
+- klasy
+- klasy abstrakcyjne
+- dziedziczenie, implementacje
+- interfejsy
+- metody
+- wyj±tki parsowane bezpo¶rednio z kodu
+- deklarowane zmienne statyczne (static variables)
+- zmienne globalne i superglobalne ($_GET) u¿yte i deklarowane
+- zmienne
+- sta³e
+- funkcje (taka sama informacja jak w przypadku metod)
+- definicje
+- zmienne globalne (z pomoc± Tokenizer Lexer)
+- zmienne superglobalne u¿yte w kodzie globalnym
+- deklaracje include
+
+Ta klasa ma w PEAR status: %{_status}.
 
 %prep
 %setup -q -c
