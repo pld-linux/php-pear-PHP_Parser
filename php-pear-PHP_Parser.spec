@@ -47,7 +47,7 @@ objects of user-specified classes, and can also be
 customized to publish each element as it is parsed, allowing
 hooks into parsing to catch information.
 
-This class has in PEAR status: %{_status}.
+In PEAR status of this package is: %{_status}.
 
 %description -l pl
 PHP_Parser jest analizatorem kodu ¼ród³owego bazowanym na prawdziwym
