@@ -50,11 +50,11 @@ hooks into parsing to catch information.
 This class has in PEAR status: %{_status}.
 
 %description -l pl
-PHP_Parser jest analizatorem kodu ¼ród³owego bazowanym na prawdzimy
+PHP_Parser jest analizatorem kodu ¼ród³owego bazowanym na prawdziwym
 parserze wygenerowanym przez phpJay. Parser u¿ywa tego samego ¼ród³a
-EBNF, którego PHP u¿ywa do sparsowania samego siemie, ma zatem takie
-same mo¿liwo¶ci. Ta wersja w pe³ni wspiera parsowania ka¿dego elementu
-PHP 5 beta 1:
+EBNF, którego PHP u¿ywa do sparsowania samego siebie, ma zatem takie
+same mo¿liwo¶ci. Ta wersja w pe³ni wspiera parsowanie ka¿dego elementu
+PHP 5 beta 1, co obejmuje:
 - klasy
 - klasy abstrakcyjne
 - dziedziczenie, implementacje
