@@ -1,11 +1,11 @@
 %include	/usr/lib/rpm/macros.php
-%define         _class          PHP
-%define         _subclass       Parser
+%define		_class		PHP
+%define		_subclass	Parser
 %define		_status		devel
 %define		_pearname	%{_class}_%{_subclass}
 
-Summary:	%{_pearname} - A PHP Grammar Parser
-Summary(pl):	%{_pearname} - Parser sk³adni PHP
+Summary:	%{_pearname} - a PHP grammar parser
+Summary(pl):	%{_pearname} - parser sk³adni PHP
 Name:		php-pear-%{_pearname}
 Version:	0.1
 Release:	1
