@@ -8,14 +8,14 @@ Summary:	%{_pearname} - a PHP grammar parser
 Summary(pl):	%{_pearname} - parser sk³adni PHP
 Name:		php-pear-%{_pearname}
 Version:	0.1
-Release:	2
+Release:	2.1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	387e2f91abc77dc556224cb467d7998e
 URL:		http://pear.php.net/package/PHP_Parser/
-BuildRequires:	rpm-php-pearprov >= 4.0.2-98
-Requires:	php-pear
+BuildRequires:	rpm-php-pearprov >= 4.4.2-11
+Requires:	php-pear >= 4:1.0-7
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -74,21 +74,23 @@ PHP 5 beta 1, co obejmuje:
 Ta klasa ma w PEAR status: %{_status}.
 
 %prep
-%setup -q -c
+%pear_package_setup
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}
-
-install %{_pearname}-%{version}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}
-install %{_pearname}-%{version}/%{_subclass}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}
+install -d $RPM_BUILD_ROOT%{php_pear_dir}
+%pear_package_install
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc %{_pearname}-%{version}/{examples/,test_jay.sh,Parser/Core5.jay}
+%doc install.log
+%doc docs/%{_pearname}/examples
+%{php_pear_dir}/.registry/*.reg
 %dir %{php_pear_dir}/%{_class}/%{_subclass}
 %{php_pear_dir}/%{_class}/*.php
 %{php_pear_dir}/%{_class}/%{_subclass}/*.php
+
+%{php_pear_dir}/data/%{_pearname}
