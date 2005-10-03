@@ -8,13 +8,14 @@ Summary:	%{_pearname} - a PHP grammar parser
 Summary(pl):	%{_pearname} - parser sk³adni PHP
 Name:		php-pear-%{_pearname}
 Version:	0.1
-Release:	2.1
+Release:	2.2
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	387e2f91abc77dc556224cb467d7998e
 URL:		http://pear.php.net/package/PHP_Parser/
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
+Requires:	php-common >= 3:4.3.0
 Requires:	php-pear >= 4:1.0-7
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
