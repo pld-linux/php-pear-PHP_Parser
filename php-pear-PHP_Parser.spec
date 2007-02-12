@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - a PHP grammar parser
-Summary(pl):	%{_pearname} - parser sk≥adni PHP
+Summary(pl.UTF-8):   %{_pearname} - parser sk≈Çadni PHP
 Name:		php-pear-%{_pearname}
 Version:	0.1
 Release:	4
@@ -52,26 +52,26 @@ hooks into parsing to catch information.
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-PHP_Parser jest analizatorem kodu ºrÛd≥owego bazowanym na prawdziwym
-parserze wygenerowanym przez phpJay. Parser uøywa tego samego ºrÛd≥a
-EBNF, ktÛrego PHP uøywa do sparsowania samego siebie, ma zatem takie
-same moøliwo∂ci. Ta wersja w pe≥ni wspiera parsowanie kaødego elementu
+%description -l pl.UTF-8
+PHP_Parser jest analizatorem kodu ≈∫r√≥d≈Çowego bazowanym na prawdziwym
+parserze wygenerowanym przez phpJay. Parser u≈ºywa tego samego ≈∫r√≥d≈Ça
+EBNF, kt√≥rego PHP u≈ºywa do sparsowania samego siebie, ma zatem takie
+same mo≈ºliwo≈õci. Ta wersja w pe≈Çni wspiera parsowanie ka≈ºdego elementu
 PHP 5 beta 1, co obejmuje:
 - klasy
 - klasy abstrakcyjne
 - dziedziczenie, implementacje
 - interfejsy
 - metody
-- wyj±tki parsowane bezpo∂rednio z kodu
+- wyjƒÖtki parsowane bezpo≈õrednio z kodu
 - deklarowane zmienne statyczne (static variables)
-- zmienne globalne i superglobalne ($_GET) uøyte i deklarowane
+- zmienne globalne i superglobalne ($_GET) u≈ºyte i deklarowane
 - zmienne
-- sta≥e
+- sta≈Çe
 - funkcje (taka sama informacja jak w przypadku metod)
 - definicje
-- zmienne globalne (z pomoc± Tokenizer Lexer)
-- zmienne superglobalne uøyte w kodzie globalnym
+- zmienne globalne (z pomocƒÖ Tokenizer Lexer)
+- zmienne superglobalne u≈ºyte w kodzie globalnym
 - deklaracje include
 
 Ta klasa ma w PEAR status: %{_status}.
