@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - a PHP grammar parser
-Summary(pl.UTF-8):   %{_pearname} - parser składni PHP
+Summary(pl.UTF-8):	%{_pearname} - parser składni PHP
 Name:		php-pear-%{_pearname}
 Version:	0.1
 Release:	4
