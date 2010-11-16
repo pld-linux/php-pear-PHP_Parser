@@ -6,12 +6,12 @@
 Summary:	%{_pearname} - a PHP grammar parser
 Summary(pl.UTF-8):	%{_pearname} - parser składni PHP
 Name:		php-pear-%{_pearname}
-Version:	0.2.1
-Release:	3
+Version:	0.2.2
+Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	53f1d8d7cdc8949ad55ea0d094342aa1
+# Source0-md5:	12afbf8b1011630af4ba6f5f83e24318
 URL:		http://pear.php.net/package/PHP_Parser/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
@@ -38,8 +38,7 @@ PHP 5 as of beta 1:
 - methods
 - exception parsing directly from source
 - static variables declared
-- global and superglobal ($_GET) variables used
-and declared
+- global and superglobal ($_GET) variables used and declared
 - variables
 - constants
 - functions (same information as methods)
