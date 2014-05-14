@@ -13,7 +13,7 @@ Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 URL:		http://pear.php.net/package/PHP_Parser/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
-BuildRequires:	rpmbuild(macros) >= 1.300
+BuildRequires:	rpmbuild(macros) >= 1.654
 Requires:	php(core) >= 4.3.0
 Requires:	php-pear >= 4:1.0-7
 Suggests:	php-pear-PHP_Parser_DocblockParser
@@ -22,7 +22,7 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 # exclude optional dependencies
-%define		_noautoreq	pear(PHP/Parser/DocblockParser.*)
+%define		_noautoreq_pear PHP/Parser/DocblockParser.*
 
 %description
 PHP_Parser is a source code analysis tool based around a real Parser
