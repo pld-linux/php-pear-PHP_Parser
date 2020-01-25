@@ -1,6 +1,5 @@
 %define		_status		alpha
 %define		_pearname PHP_Parser
-%include	/usr/lib/rpm/macros.php
 Summary:	%{_pearname} - a PHP grammar parser
 Summary(pl.UTF-8):	%{_pearname} - parser składni PHP
 Name:		php-pear-%{_pearname}
